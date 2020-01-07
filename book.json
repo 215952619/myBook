@@ -31,7 +31,8 @@
         "advanced-emoji",
         "pre",
         "klipse",
-        "click-reveal"
+        "click-reveal",
+        "accordion"
     ],
     "pluginsConfig": {
         "github": {

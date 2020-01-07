@@ -42,8 +42,9 @@
 
 1. **search-pro**   高级搜索，支持中文，需要将默认的`search`和`lunr`插件去掉
 
-1. **advanced-emoji** 支持emoji表情  
-    emoji可选列表参考 
+1. **advanced-emoji** 支持emoji表情
+
+    emoji可选列表参考
     [https://www.webfx.com/tools/emoji-cheat-sheet/](https://www.webfx.com/tools/emoji-cheat-sheet/)
 
 1. **github**   在右上角添加github图标
@@ -55,8 +56,10 @@
     }
     ```
 
-1. **emphasize**    为文字加上底色  
-    使用示例：  
+1. **emphasize**    为文字加上底色
+
+    使用示例：
+
     ```
     This text is {% pre _tag="em" %}highlighted{% endpre %} !
     This text is {% pre _tag="em" %}highlighted with **markdown**{% endpre %} !
@@ -66,11 +69,11 @@
     ```
 
     ```
-    {% raw %}This text is {% pre _tag="em" %}highlighted{% endpre %} !
-    This text is {% pre _tag="em" %}highlighted with **markdown**{% endpre %} !
-    This text is {% pre _tag="em",type="green" %}highlighted in green{% endpre %} !
-    This text is {% pre _tag="em",type="red" %}highlighted in red{% endpre %} !
-    This text is {% pre _tag="em",color="#ff0000" %}highlighted with a custom color{% endpre %} !
+    {% raw %}This text is {% em %}highlighted{% endem %} !
+    This text is {% em %}highlighted with **markdown**{% endem %} !
+    This text is {% em type="green" %}highlighted in green{% endem %} !
+    This text is {% em type="red" %}highlighted in red{% endem %} !
+    This text is {% em color="#ff0000" %}highlighted with a custom color{% endem %} !
     {% endraw %}
     ```
 
@@ -181,4 +184,23 @@
     {% endreveal %}
 
 1. **custom-favicon** 修改浏览器标题栏图标
-    > 需要在 `pluginsConfig` 中指定 `favicon` 字段，只能使用 `.ico` 文件
+    > 需要在`pluginsConfig`中指定`favicon`字段，只能使用`.ico`文件
+
+1. **hide-element** 隐藏元素
+    > 需要在`pluginsConfig`中指定`elements`,即需要隐藏的元素数组
+
+1. **accordion** 折叠模块
+    实例：
+
+    ```md
+    # 模板遍历以`<p>%accordion%`开头，注意不能有空格
+    %accordion%Some title here%accordion%
+    # 此处需要遍历`%accordion%</p>`，注意换行
+    Any content here
+    # 插件需要遍历`<p>%/accordion%</p>`，所以需要换行
+    %/accordion%
+    ```
+    效果如下：
+    <p>%accordion%Some title here%accordion%</p>
+    <p>Any content here</p>
+    <p>%/accordion%</p>
