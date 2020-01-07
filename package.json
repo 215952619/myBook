@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "gitbook-plugin-advanced-emoji": "^0.2.2",
+    "gitbook-plugin-click-reveal": "^1.0.0",
+    "gitbook-plugin-emphasize": "^1.1.0",
+    "gitbook-plugin-github": "^2.0.0",
+    "gitbook-plugin-klipse": "^1.2.0",
+    "gitbook-plugin-pre": "^2.0.0",
+    "gitbook-plugin-sharing-plus": "^0.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "serve": "gitbook serve ./ --port=5000",
+    "serve-debug": "gitbook serve ./ --port=5000 --log=debug --debug",
+    "build": "gitbook build",
+    "install": "gitbook install",
+    "pdf": "gitbook pdf ./ ./mybook.pdf",
+    "epub": "gitbook epub ./ ./mybook.epub",
+    "mobi": "gitbook mobi ./ ./mybook.mobi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/215952619/myBook.git"
+  },
+  "keywords": [
+    "gitbook"
+  ],
+  "author": "liyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/215952619/myBook/issues"
+  },
+  "homepage": "https://github.com/215952619/myBook#readme"
+}

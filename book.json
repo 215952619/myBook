@@ -1,0 +1,67 @@
+{
+    "title": "Liyy's book",
+    "author": "liyy",
+    "description": "Good Good Study, Day Day Up!",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "root": "./views/",
+    "structure": {
+        "readme": "README.md"
+    },
+    "links": {
+        "sidebar": {
+            "我的github": "https://github.com/215952619",
+            "本文指引": "localhost:4000"
+        }
+    },
+    "plugins": [
+        "-search",
+        "-lunr",
+        "-sharing",
+        "-splitter",
+        "-expandable-chapters-small",
+        "-anchors",
+        "github",
+        "-github-buttons",
+        "-donate",
+        "sharing-plus",
+        "-anchor-navigation-ex",
+        "-favicon",
+        "emphasize",
+        "advanced-emoji",
+        "pre",
+        "klipse",
+        "click-reveal"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/215952619"
+        },
+        "github-buttons": {
+            "buttons": [
+                {
+                    "user": "215952619",
+                    "repo": "music-demo",
+                    "type": "star",
+                    "size": "small",
+                    "count": true
+                },
+                {
+                    "user": "215952619",
+                    "repo": "music-demo",
+                    "type": "fork",
+                    "size": "small",
+                    "count": true
+                }
+            ]
+        },
+        "sharing": {
+            "qq": true,
+            "qzone": true,
+            "weibo": true,
+            "all": [
+                "douban", "weibo", "qq", "qzone", "whatsapp"
+            ]
+        }
+    }
+}
